@@ -1,4 +1,4 @@
-# Fipe API
+# Fipe API [![Build Status](https://travis-ci.org/leobugoni/fipe.svg?branch=master)](https://travis-ci.org/leobugoni/fipe)
 Web service para consultar tabela [Fipe](https://veiculos.fipe.org.br/)
 
 ### Consultando fipe pelo [Postman](https://www.getpostman.com/)
