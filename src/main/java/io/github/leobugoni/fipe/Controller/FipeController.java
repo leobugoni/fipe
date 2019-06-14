@@ -4,18 +4,18 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.HttpClientBuilder;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-@Controller
+@RestController
 public class FipeController {
 
-    @RequestMapping(value = "/fipe/consultar/", method = RequestMethod.POST, produces = "application/json")
+    @RequestMapping(value = "/fipe/consultar", method = RequestMethod.POST, produces = "application/json")
     public String consultar(@RequestBody String parametros) {
         try {
             HttpPost request = new HttpPost("http://veiculos.fipe.org.br/api/veiculos/"+parametros);
