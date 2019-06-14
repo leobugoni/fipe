@@ -7,7 +7,6 @@ import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MvcResult;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
 import static org.springframework.http.MediaType.APPLICATION_JSON;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 
@@ -43,7 +42,6 @@ public class FipeControllerIntegrationTest extends ControllerIntegration {
                                 .content(contentBody))
                                 .andReturn();
         assertEquals(200, result.getResponse().getStatus());
-        assertNotNull(result.getModelAndView());
     }
 
     @Test
@@ -63,7 +61,6 @@ public class FipeControllerIntegrationTest extends ControllerIntegration {
                                 .content(contentBody))
                                 .andReturn();
         assertEquals(200, result.getResponse().getStatus());
-        assertNotNull(result.getModelAndView());
     }
 
     @Test
@@ -80,7 +77,6 @@ public class FipeControllerIntegrationTest extends ControllerIntegration {
                                 .content(contentBody))
                                 .andReturn();
         assertEquals(200, result.getResponse().getStatus());
-        assertNotNull(result.getModelAndView());
     }
 
     @Test
@@ -96,7 +92,6 @@ public class FipeControllerIntegrationTest extends ControllerIntegration {
                                 .content(contentBody))
                                 .andReturn();
         assertEquals(200, result.getResponse().getStatus());
-        assertNotNull(result.getModelAndView());
     }
 
     @Test
@@ -111,7 +106,6 @@ public class FipeControllerIntegrationTest extends ControllerIntegration {
                                 .content(contentBody))
                                 .andReturn();
         assertEquals(200, result.getResponse().getStatus());
-        assertNotNull(result.getModelAndView());
     }
 
     @Test
@@ -124,6 +118,5 @@ public class FipeControllerIntegrationTest extends ControllerIntegration {
                                 .content(contentBody))
                                 .andReturn();
         assertEquals(200, result.getResponse().getStatus());
-        assertNotNull(result.getModelAndView());
     }
 }
