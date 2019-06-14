@@ -12,7 +12,7 @@
 	<artifactId>fipe</artifactId>
 	<version>0.1.0</version>
 	<packaging>war</packaging>
-	<name>seeker</name>
+	<name>fipe</name>
 	<description>Web service para consultar fipe</description>
 
 	<properties>
